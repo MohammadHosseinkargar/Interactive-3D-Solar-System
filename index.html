@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive 3D Solar System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="solar-system">
+        <div class="sun"></div>
+        <div class="orbit mercury-orbit">
+            <div class="planet mercury"></div>
+        </div>
+        <div class="orbit venus-orbit">
+            <div class="planet venus"></div>
+        </div>
+        <div class="orbit earth-orbit">
+            <div class="planet earth"></div>
+        </div>
+        <div class="orbit mars-orbit">
+            <div class="planet mars"></div>
+        </div>
+        <!-- Add more planets similarly -->
+    </div>
+    <div id="planet-info-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="planet-name"></h2>
+            <p id="planet-info"></p>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
